@@ -49,6 +49,15 @@ function validateSyntax() {
         check3 = true;
     }
 
+
+    // === Last checks if all three checks are true. Set result to 'Valid' otherwise sets it to 'Invalid' === //
+
+    if (check1 && check2 && check3) {
+        result = "Valid Syntax 🟢";
+    } else {
+        result = "Invalid Syntax 🔴";
+    }
+
     document.getElementById('result').innerText = result;
 }
 
