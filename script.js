@@ -35,6 +35,20 @@ function validateSyntax() {
         check2 = true;
     }
 
+
+    // === CHECK 3 LOGIC === //
+
+    // Extracting the rest of the input
+    const part3 = input.slice(8);
+
+    //Initialising boolean for third check
+    let check3 = false;
+
+    // Checking if the rest of the inputs length is greater than 0
+    if (part3.length > 0) {
+        check3 = true;
+    }
+
     document.getElementById('result').innerText = result;
 }
 
