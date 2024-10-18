@@ -19,6 +19,22 @@ function validateSyntax() {
         check1 = true;
     }
 
+
+    // === CHECK 2 LOGIC === //
+
+    // Extracting next 4 character from input
+    const part2 = input.slice(4, 8);
+
+    //Initialising boolean for second check
+    let check2 = false;
+
+    // Checking if 4 characters are alphanumeric characters
+    const yearAsInteger = parseInt(part2);
+
+    if (isNaN(yearAsInteger) === false) {
+        check2 = true;
+    }
+
     document.getElementById('result').innerText = result;
 }
 
