@@ -58,7 +58,7 @@ function validateSyntax() {
         result = "Invalid Syntax 🔴";
     }
 
-    document.getElementById('result').innerText = result;
+    document.getElementById('result').innerHTML = result;
 }
 
 
